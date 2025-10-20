@@ -1,0 +1,580 @@
+/* ===============================
+   Tipografía y configuración base
+================================== */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* ===============================
+   Encabezado
+================================== */
+header {
+  background: #1565c0;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  margin-left: calc(-1 * (100vw - 100%) / 2);
+  box-sizing: border-box;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* ===============================
+   Contenido principal
+================================== */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ===============================
+   Sección principal del eliminador
+================================== */
+.metadata-remover {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.metadata-remover h1 {
+  margin-bottom: 10px;
+  color: #1565c0;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.metadata-remover > p {
+  margin-bottom: 40px;
+  color: #555;
+  font-size: 1.1em;
+}
+
+/* ===============================
+   Contenedor principal
+================================== */
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ===============================
+   Panel izquierdo
+================================== */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Área de carga */
+.upload-area {
+  border: 2px dashed #1565c0;
+  border-radius: 8px;
+  padding: 50px 30px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: #f8f9fa;
+}
+
+.upload-area:hover {
+  background: #e3f2fd;
+  border-color: #0d47a1;
+}
+
+.upload-area.drag-over {
+  background: #e3f2fd;
+  border-color: #0d47a1;
+  transform: scale(1.02);
+}
+
+.upload-area i {
+  font-size: 3.5em;
+  color: #1565c0;
+  margin-bottom: 20px;
+}
+
+.upload-area h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.3em;
+}
+
+.upload-area p {
+  margin: 12px 0;
+  color: #666;
+  font-size: 1em;
+}
+
+/* Botón de búsqueda */
+.browse-btn {
+  padding: 14px 28px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: inherit;
+  font-weight: 600;
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+.browse-btn:hover {
+  background: #1565c0;
+}
+
+/* Input invisible */
+.file-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.file-types {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 25px !important;
+}
+
+/* ===============================
+   Información del archivo
+================================== */
+.selected-file-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
+.selected-file-info p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+}
+
+.selected-file-info i {
+  color: #1565c0;
+}
+
+#selected-file-name {
+  display: inline-block;
+  max-width: 100%;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+/* ===============================
+   Botones de acción
+================================== */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.process-btn,
+.download-btn {
+  padding: 16px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-family: inherit;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.process-btn {
+  background: #d32f2f;
+  color: white;
+}
+
+.process-btn:hover:not(:disabled) {
+  background: #b71c1c;
+  transform: scale(1.03);
+}
+
+.process-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.download-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.download-btn:hover {
+  background: #388E3C;
+  transform: scale(1.03);
+}
+
+/* ===============================
+   Reproductor de audio
+================================== */
+.audio-player {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.audio-player audio {
+  width: 100%;
+}
+
+/* ===============================
+   Panel derecho
+================================== */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Vista previa */
+.file-preview-section {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.file-preview {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  background: white;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+}
+
+.file-preview i {
+  font-size: 3em;
+  color: #1565c0;
+}
+
+.file-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.file-details h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.3em;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.file-details p {
+  margin: 8px 0;
+  color: #666;
+  font-size: 1em;
+}
+
+/* ===============================
+   Metadatos
+================================== */
+.metadata-section {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.metadata-section h3 {
+  color: #d32f2f;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+
+.metadata-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.metadata-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.metadata-list li:last-child {
+  border-bottom: none;
+}
+
+/* ===============================
+   Sección informativa
+================================== */
+.info-section {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+.info-section h3 {
+  color: #1565c0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.info-section > p {
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 1em;
+}
+
+.metadata-list-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.metadata-list-icons li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.metadata-list-icons i {
+  color: #1565c0;
+  font-size: 1.1em;
+}
+
+/* ===============================
+   Clases utilitarias
+================================== */
+.hidden {
+  display: none !important;
+}
+
+/* ===============================
+   Pie de página
+================================== */
+footer {
+  background: #1565c0;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+  margin-top: auto;
+  width: 100vw;
+  margin-left: calc(-1 * (100vw - 100%) / 2);
+  box-sizing: border-box;
+}
+
+/* ===============================
+   Modo oscuro
+================================== */
+body.dark-mode {
+  background: #1e1e1e;
+  color: #eaeaea;
+}
+
+body.dark-mode header {
+  background: #0d47a1;
+}
+
+body.dark-mode .metadata-remover h1 {
+  color: #bbdefb;
+}
+
+body.dark-mode .metadata-remover > p {
+  color: #bbdefb;
+}
+
+body.dark-mode .main-container {
+  background: #2c2c2c;
+  color: #eaeaea;
+}
+
+body.dark-mode .upload-area {
+  border-color: #90caf9;
+  background: #333;
+  color: #eaeaea;
+}
+
+body.dark-mode .upload-area:hover,
+body.dark-mode .upload-area.drag-over {
+  background: #1a237e;
+  border-color: #90caf9;
+}
+
+body.dark-mode .selected-file-info,
+body.dark-mode .file-preview-section,
+body.dark-mode .metadata-section,
+body.dark-mode .info-section {
+  background: #333;
+  border-color: #444;
+  color: #eaeaea;
+}
+
+body.dark-mode .file-preview {
+  background: #2c2c2c;
+  border-color: #555;
+}
+
+body.dark-mode .file-details h4 {
+  color: #eaeaea;
+}
+
+body.dark-mode .file-details p {
+  color: #bbdefb;
+}
+
+body.dark-mode .metadata-section h3 {
+  color: #ef5350;
+}
+
+body.dark-mode .metadata-list-icons i {
+  color: #90caf9;
+}
+
+body.dark-mode footer {
+  background: #0d47a1;
+}
+
+/* ===============================
+   Responsividad
+================================== */
+@media (max-width: 992px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .metadata-remover {
+    padding: 20px 15px;
+  }
+
+  .main-container {
+    padding: 25px;
+  }
+
+  header .logo {
+    font-size: 1.3em;
+  }
+
+  .upload-area {
+    padding: 30px 20px;
+  }
+
+  .file-preview {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo {
+    font-size: 1.2em;
+  }
+
+  .metadata-remover h1 {
+    font-size: 1.5em;
+  }
+
+  .main-container {
+    padding: 15px;
+  }
+
+  .upload-area {
+    padding: 25px 15px;
+  }
+
+  .file-preview {
+    width: 110px;
+    height: 110px;
+  }
+
+  .process-btn,
+  .download-btn {
+    padding: 12px 18px;
+    font-size: 0.9em;
+  }
+}
