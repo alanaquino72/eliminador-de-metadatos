@@ -58,4 +58,4 @@ eliminador-de-metadatos
 ## Licencia
 
 Este proyecto se distribuye bajo la Licencia MIT.
-Puedes usarlo, modificarlo y compartirlo libremente con el crédito correspondiente.
+Puedes usarlo, modificarlo y compartirlo libremente dando el crédito correspondiente.
