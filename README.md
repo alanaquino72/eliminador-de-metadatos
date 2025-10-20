@@ -37,25 +37,26 @@ Incluye **modo oscuro**, vista previa de archivos, descarga del archivo limpio y
 
 ---
 
-Estructura del proyecto
+## Estructura del proyecto
 
+```
 eliminador-de-metadatos
 ├── index.html          # Estructura principal.
 ├── style.css           # Estilos y diseño responsivo.
 ├── script.js           # Lógica del eliminador.
 └── README.md           # Documentación del proyecto.
-
+```
 
 ---
 
-Autor
+## Autor
 
 Alan Aquino.
 Estudiante de Ingeniería en Informática.
 
 ---
 
-Licencia
+## Licencia
 
 Este proyecto se distribuye bajo la Licencia MIT.
 Puedes usarlo, modificarlo y compartirlo libremente con el crédito correspondiente.
