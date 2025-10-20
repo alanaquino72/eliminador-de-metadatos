@@ -17,7 +17,7 @@ Incluye **modo oscuro**, vista previa de archivos, descarga del archivo limpio y
 
 ## Tecnologías utilizadas
 
-- **HTML5** → Estructura principal del sitio web.  
+- **HTML5** → Estructura principal de la página web.  
 - **CSS3** → Estilos modernos, colores adaptables y modo oscuro.  
 - **JavaScript** → Lógica para carga, análisis y limpieza de archivos.  
 - **Font Awesome** → Íconos visuales y representativos.  
