@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminador de Metadatos</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tipografía y FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Metadatos básicos -->
+  <meta name="description" content="Elimina los metadatos ocultos de tus archivos (documentos, audios, imágenes y videos) para proteger tu privacidad.">
+  <meta name="theme-color" content="#1565c0">
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">Eliminador de Metadatos</div>
+    <button id="dark-mode-toggle" aria-label="Cambiar modo oscuro">🌙</button>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section class="metadata-remover">
+      <h1>Eliminador de Metadatos</h1>
+      <p>Sube cualquier archivo para eliminar sus metadatos y proteger tu privacidad</p>
+      
+      <div class="main-container">
+        <!-- Panel izquierdo -->
+        <div class="left-panel">
+          <div class="upload-area" id="upload-area">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <h3>Arrastra y suelta archivos aquí</h3>
+            <p>o</p>
+            <button class="browse-btn" id="browse-btn">Seleccionar archivo</button>
+            <input type="file" id="file-input" accept="*/*" class="file-input">
+            <p class="file-types">Soporta: Documentos, audios, imágenes y videos.</p>
+          </div>
+
+          <div class="selected-file-info hidden" id="selected-file-info">
+            <p><i class="fas fa-file"></i> <span id="selected-file-name">Ningún archivo seleccionado</span></p>
+          </div>
+
+          <div class="action-buttons">
+            <button id="process-btn" class="process-btn hidden" disabled>
+              <i class="fas fa-magic"></i> Eliminar Metadatos
+            </button>
+            <button id="download-btn" class="download-btn hidden">
+              <i class="fas fa-download"></i> Descargar Archivo Limpio
+            </button>
+          </div>
+
+          <!-- Reproductor de audio -->
+          <div class="audio-player hidden" id="audio-player">
+            <audio id="audio-preview" controls></audio>
+          </div>
+        </div>
+
+        <!-- Panel derecho -->
+        <div class="right-panel">
+          <div class="file-preview-section hidden" id="file-preview-section">
+            <div class="file-preview" id="file-preview">
+              <i class="fas fa-file" id="file-icon"></i>
+              <img id="image-preview" class="hidden" alt="Vista previa del archivo">
+            </div>
+            <div class="file-details">
+              <h4 id="file-name">Nombre del archivo</h4>
+              <p id="file-size">Tamaño: 0 KB</p>
+              <p id="file-type">Tipo: Desconocido</p>
+            </div>
+          </div>
+
+          <div class="metadata-section hidden" id="metadata-section">
+            <h3>Metadatos detectados:</h3>
+            <div class="metadata-list">
+              <ul id="metadata-items"></ul>
+            </div>
+          </div>
+
+          <!-- Sección informativa mejorada -->
+          <div class="info-section">
+            <h3>¿Qué son los metadatos?</h3>
+            <p>Los metadatos son información oculta en los archivos que puede incluir:</p>
+            <ul class="metadata-list-icons">
+              <li><i class="fa-solid fa-circle-check"></i> Información de cámara (foto).</li>
+              <li><i class="fa-solid fa-circle-check"></i> Ubicación GPS.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Fechas de creación y modificación.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Información del autor.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Software utilizado.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Alan Aquino. Eliminador de Metadatos.</p>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="script.js" defer></script>
+</body>
+</html>
