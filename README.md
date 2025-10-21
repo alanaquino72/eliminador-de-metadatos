@@ -31,7 +31,7 @@ Incluye **modo oscuro**, vista previa de archivos, descarga del archivo limpio y
    ```bash
    git clone https://github.com/alanaquino72/eliminador-de-metadatos.git
    ```
-2. Abre el archivo index.html en tu navegador.
+2. Abre el archivo `index.html` en tu navegador.
 3. Sube un archivo desde tu dispositivo o arrástralo al área indicada.
 4. Haz clic en “Eliminar Metadatos” y luego descarga el archivo limpio.
 
