@@ -35,7 +35,7 @@ Incluye **modo oscuro**, vista previa de archivos, descarga del archivo limpio y
 3. Sube un archivo desde tu dispositivo o arrástralo al área indicada.
 4. Haz clic en “Eliminar Metadatos” y luego descarga el archivo limpio.
 
-**Alternativa sin clonar el repositorio:**
+**O presiona el enlace directo:**
 
 [Presiona aquí para visitar la página web](https://alanaquino72.github.io/eliminador-de-metadatos/).
 
