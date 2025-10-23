@@ -1,6 +1,6 @@
 # Eliminador de Metadatos
 
-Este proyecto es una **aplicación web interactiva** que permite eliminar los **metadatos ocultos** de archivos (documentos, audios, imágenes y videos) para **proteger la privacidad del usuario**.  
+Este proyecto es una **aplicación web interactiva** que permite eliminar los **metadatos ocultos** de archivos (documentos, audios, imágenes y videos) para **proteger la privacidad y seguridad del usuario**.  
 Incluye **modo oscuro**, vista previa de archivos, descarga del archivo limpio y un diseño moderno y adaptable.
 
 ---
@@ -17,11 +17,11 @@ Incluye **modo oscuro**, vista previa de archivos, descarga del archivo limpio y
 
 ## Tecnologías utilizadas
 
-- **HTML5** → Estructura principal de la página web.  
-- **CSS3** → Estilos modernos, colores adaptables y modo oscuro.  
-- **JavaScript** → Lógica para carga, análisis y limpieza de archivos.  
-- **Font Awesome** → Íconos visuales y representativos.  
-- **Google Fonts (Poppins)** → Tipografía moderna y legible.
+- **HTML5**: Estructura principal de la página web.  
+- **CSS3**: Estilos modernos, colores adaptables y modo oscuro.  
+- **JavaScript**: Lógica para carga, análisis y limpieza de archivos.  
+- **Font Awesome**: Íconos visuales y representativos.  
+- **Google Fonts (Poppins)**: Tipografía moderna y legible.
 
 ---
 
@@ -29,7 +29,7 @@ Incluye **modo oscuro**, vista previa de archivos, descarga del archivo limpio y
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/alanaquino72/eliminador-de-metadatos.git
+   git clone https://github.com/alanaquino19/eliminador-de-metadatos.git
    ```
 2. Abre el archivo `index.html` en tu navegador.
 3. Sube un archivo desde tu dispositivo o arrástralo al área indicada.
@@ -37,7 +37,7 @@ Incluye **modo oscuro**, vista previa de archivos, descarga del archivo limpio y
 
 **Alternativa sin clonar el repositorio:**
 
-[Presiona aquí para visitar la página web](https://alanaquino72.github.io/eliminador-de-metadatos/).
+[Presiona aquí para visitar la página web](https://alanaquino19.github.io/eliminador-de-metadatos/).
 
 ---
 
@@ -55,7 +55,7 @@ eliminador-de-metadatos
 
 ## Autor
 
-**Alan Aquino**, estudiante de Ingeniería en Informática.
+Alan Aquino.
 
 ---
 
